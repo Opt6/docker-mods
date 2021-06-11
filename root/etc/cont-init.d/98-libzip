@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+echo "**** installing libzip ****"
+apk add --no-cache \
+  libzip-dev \
+  zip \
+&& docker-php-ext-install zip
